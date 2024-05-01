@@ -1,0 +1,45 @@
+%! Author = Matthew Brabham
+%! Date = 4/30/24
+
+% Preamble
+\documentclass[12pt, a4paper, final]{article}
+
+% Packages
+\usepackage[margin=2.5cm]{geometry} % Adjust page margins if needed
+
+% Fonts and text settings
+\usepackage[olddefault]{fontsetup} % use the new computer modern fonts
+\usepackage{parskip} % for better paragraph separation
+\usepackage{enumitem} % for better lists
+
+\usepackage{tabularray}
+\usepackage{xcolor}
+\usepackage{ninecolors}
+\newcommand{\Room}[1]{\textbf{Room: #1}}
+\newcommand{\Time}[1]{\textbf{Time: #1}}
+
+% Hyperlinks
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+]{hyperref} % for hyperlinks
+
+
+% Document
+\author{Matthew Brabham}
+\title{Drupal Con Portland 2024}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    \tableofcontents
+    \newpage
+
+    \input{src/day_one}
+    \input{src/day_two}
+    \input{src/day_three}
+
+\end{document}

@@ -2,7 +2,7 @@
 %! Date = 4/30/24
 
 % Preamble
-\documentclass[12pt, a4paper, final]{article}
+\documentclass[12pt, a4paper, draft]{article}
 
 % Packages
 \usepackage[margin=2.5cm]{geometry} % Adjust page margins if needed
@@ -13,6 +13,8 @@
 \usepackage{enumitem} % for better lists
 
 \usepackage{tabularray}
+\UseTblrLibrary{booktabs}
+
 \usepackage{xcolor}
 \usepackage{ninecolors}
 \newcommand{\Room}[1]{\textbf{Room: #1}}
@@ -38,6 +40,7 @@
     \tableofcontents
     \newpage
 
+    \newpage
     \input{src/day_one}
     \input{src/day_two}
     \input{src/day_three}
